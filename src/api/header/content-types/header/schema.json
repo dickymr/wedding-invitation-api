@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bgImageLandscape": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "bgImagePortrait": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "bridegroom": {
+      "type": "string"
+    },
+    "weddings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wedding.wedding"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "ongoing": {
+      "type": "string"
+    },
+    "days": {
+      "type": "string"
+    },
+    "hours": {
+      "type": "string"
+    },
+    "minutes": {
+      "type": "string"
+    },
+    "seconds": {
+      "type": "string"
+    }
+  }
+}
